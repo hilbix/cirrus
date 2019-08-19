@@ -1,5 +1,5 @@
 container:
-  image: debian:latest
+  image: debian:etch
 
 make_task:
   update_script: apt-get update
