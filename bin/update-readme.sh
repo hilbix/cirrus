@@ -47,12 +47,12 @@ do
 	{
 	for br in "${BR[@]}"
 	do
-		echo "[![branch $br status](https://api.cirrus-ci.com/github/$us/$na.svg?branch=$br)](https://cirrus-ci.com/github/$us/$na/$br)"
+		echo "[![branch $br status](https://api.cirrus-ci.com/github/$us/$na.svg?branch=$br)](https://cirrus-ci.com/github/$us/$na/$br) ${br##*-},"
 	done
 	# Found no way to express the same in sed,
 	# as sed apparently does not support inverted regexp
 	# This removes the HEAD from the previous file:
-	awk '!/^\[\!\[branch .*)$/,0' "$a"
+	awk '!/^\[\!\[branch/,0' "$a"
 	} > "$a.tmp" &&
 
 	if	cmp -s "$a.tmp" "$a"
