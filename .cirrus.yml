@@ -1,5 +1,5 @@
 container:
-  image: debian:latest
+  image: debian:wheezy
 
 make_task:
   update_script: apt-get update
