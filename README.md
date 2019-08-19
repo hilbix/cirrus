@@ -1,3 +1,9 @@
+[![branch debian-buster status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-buster)](https://cirrus-ci.com/github/hilbix/cirrus/debian-buster)
+[![branch debian-jessie status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-jessie)](https://cirrus-ci.com/github/hilbix/cirrus/debian-jessie)
+[![branch debian-latest status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-latest)](https://cirrus-ci.com/github/hilbix/cirrus/debian-latest)
+[![branch debian-stretch status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-stretch)](https://cirrus-ci.com/github/hilbix/cirrus/debian-stretch)
+[![branch newbranch status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=newbranch)](https://cirrus-ci.com/github/hilbix/cirrus/newbranch)
+
 # Cirrus CI tests
 
 This is a repository to do some tests with the help of CirrusCI.
