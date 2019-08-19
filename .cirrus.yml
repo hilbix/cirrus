@@ -2,6 +2,6 @@ container:
   image: debian:latest
 
 make_task:
-  apt_script: apt-get update && apt-get -y dist-upgrade && apt-get install build-essential
+  apt_script: apt-get update && apt-get -y dist-upgrade && apt-get -y install build-essential
   make_script: make
 
