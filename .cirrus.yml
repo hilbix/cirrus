@@ -1,5 +1,5 @@
 container:
-  image: debian:latest
+  image: ubuntu:lucid
 
 make_task:
   update_script: apt-get update
