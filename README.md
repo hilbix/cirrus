@@ -1,4 +1,4 @@
-[![debian-latest status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-latest)](https://cirrus-ci.com/github/hilbix/cirrus/debian-latest)
+[![ubuntu-bionic status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=ubuntu-bionic)](https://cirrus-ci.com/github/hilbix/cirrus/ubuntu-bionic)
 
-# branch debian-latest
+# branch ubuntu-bionic
 
