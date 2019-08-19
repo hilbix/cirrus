@@ -40,6 +40,8 @@ do
 done 6< <(git ls-remote --heads origin)
 
 # Poor man's replacer
+was=
+had=false
 for a
 do
 	# HEAD becomes Markdown branch list
@@ -47,8 +49,22 @@ do
 	{
 	for br in "${BR[@]}"
 	do
-		echo "[![branch $br status](https://api.cirrus-ci.com/github/$us/$na.svg?branch=$br)](https://cirrus-ci.com/github/$us/$na/$br) ${br##*-},"
+		n="${br%"${br##*-}"}"
+		o=" $n"
+		$had &&
+		if	[ ".$was" = ".$n" ]
+		then
+			echo ','
+			o=-
+		else
+			echo '  '
+		fi
+		was="$n"
+		echo -n "[![branch $br status](https://api.cirrus-ci.com/github/$us/$na.svg?branch=$br)](https://cirrus-ci.com/github/$us/$na/$br)$o${br##*-}"
+		had=:
 	done
+	$had && echo
+
 	# Found no way to express the same in sed,
 	# as sed apparently does not support inverted regexp
 	# This removes the HEAD from the previous file:
