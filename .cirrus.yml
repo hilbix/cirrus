@@ -2,6 +2,9 @@ container:
   image: debian:latest
 
 make_task:
-  apt_script: apt-get update && apt-get install -y etckeeper && apt-get dist-upgrade -y && apt-get install -y build-essential git
+  update_script: apt-get update
+  etckeeper_script: apt-get install -y etckeeper
+  upgrade_script: apt-get dist-upgrade -y
+  essentials_script: apt-get install -y build-essential git
   make_script: make
 
