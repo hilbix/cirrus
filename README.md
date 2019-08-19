@@ -1,4 +1,4 @@
-[![debian-latest status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-latest)](https://cirrus-ci.com/github/hilbix/cirrus/debian-latest)
+[![ubuntu-dapper status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=ubuntu-dapper)](https://cirrus-ci.com/github/hilbix/cirrus/ubuntu-dapper)
 
-# branch debian-latest
+# branch ubuntu-dapper
 
