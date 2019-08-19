@@ -1,4 +1,4 @@
-[![debian-latest status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-latest)](https://cirrus-ci.com/github/hilbix/cirrus/debian-latest)
+[![debian-jessie status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-jessie)](https://cirrus-ci.com/github/hilbix/cirrus/debian-jessie)
 
-# branch debian-latest
+# branch debian-jessie
 
