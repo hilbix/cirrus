@@ -1,4 +1,4 @@
-[![debian-latest status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-latest)](https://cirrus-ci.com/github/hilbix/cirrus/debian-latest)
+[![debian-buster status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-buster)](https://cirrus-ci.com/github/hilbix/cirrus/debian-buster)
 
-# branch debian-latest
+# branch debian-buster
 
