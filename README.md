@@ -1,4 +1,4 @@
-[![debian-latest status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-latest)](https://cirrus-ci.com/github/hilbix/cirrus/debian-latest)
+[![debian-sarge status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-sarge)](https://cirrus-ci.com/github/hilbix/cirrus/debian-sarge)
 
-# branch debian-latest
+# branch debian-sarge
 
