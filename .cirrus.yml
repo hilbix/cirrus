@@ -1,6 +1,7 @@
 container:
-  image: gcc:latest
+  image: debian:latest
 
 make_task:
+  apt_script: apt-get update && apt-get upgrade
   make_script: make
 
