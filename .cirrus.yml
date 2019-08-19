@@ -2,6 +2,6 @@ container:
   image: debian:latest
 
 make_task:
-  apt_script: apt-get update && apt-get upgrade
+  apt_script: apt-get update && apt-get -y dist-upgrade
   make_script: make
 
