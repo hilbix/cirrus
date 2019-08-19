@@ -5,6 +5,8 @@ make_task:
   update_script: apt-get update
   etckeeper_script: apt-get install -y etckeeper
   upgrade_script: apt-get dist-upgrade -y
-  essentials_script: apt-get install -y build-essential git
+  depends_script: apt-get install -y build-essential git
+  lsb_script: lsb_release -a
+  packages_script: dpkg -l
   make_script: make
 
