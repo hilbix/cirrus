@@ -1,8 +1,23 @@
-[![branch debian-buster status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-buster)](https://cirrus-ci.com/github/hilbix/cirrus/debian-buster)
-[![branch debian-jessie status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-jessie)](https://cirrus-ci.com/github/hilbix/cirrus/debian-jessie)
-[![branch debian-latest status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-latest)](https://cirrus-ci.com/github/hilbix/cirrus/debian-latest)
-[![branch debian-stretch status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-stretch)](https://cirrus-ci.com/github/hilbix/cirrus/debian-stretch)
-[![branch newbranch status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=newbranch)](https://cirrus-ci.com/github/hilbix/cirrus/newbranch)
+[![branch debian-bullseye status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-bullseye)](https://cirrus-ci.com/github/hilbix/cirrus/debian-bullseye) bullseye,
+[![branch debian-buster status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-buster)](https://cirrus-ci.com/github/hilbix/cirrus/debian-buster) buster,
+[![branch debian-etch status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-etch)](https://cirrus-ci.com/github/hilbix/cirrus/debian-etch) etch,
+[![branch debian-jessie status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-jessie)](https://cirrus-ci.com/github/hilbix/cirrus/debian-jessie) jessie,
+[![branch debian-latest status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-latest)](https://cirrus-ci.com/github/hilbix/cirrus/debian-latest) latest,
+[![branch debian-lenny status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-lenny)](https://cirrus-ci.com/github/hilbix/cirrus/debian-lenny) lenny,
+[![branch debian-sarge status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-sarge)](https://cirrus-ci.com/github/hilbix/cirrus/debian-sarge) sarge,
+[![branch debian-squeeze status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-squeeze)](https://cirrus-ci.com/github/hilbix/cirrus/debian-squeeze) squeeze,
+[![branch debian-stretch status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-stretch)](https://cirrus-ci.com/github/hilbix/cirrus/debian-stretch) stretch,
+[![branch debian-wheezy status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-wheezy)](https://cirrus-ci.com/github/hilbix/cirrus/debian-wheezy) wheezy,
+[![branch debian-woody status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=debian-woody)](https://cirrus-ci.com/github/hilbix/cirrus/debian-woody) woody,
+[![branch newbranch status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=newbranch)](https://cirrus-ci.com/github/hilbix/cirrus/newbranch) newbranch,
+[![branch ubuntu-bionic status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=ubuntu-bionic)](https://cirrus-ci.com/github/hilbix/cirrus/ubuntu-bionic) bionic,
+[![branch ubuntu-dapper status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=ubuntu-dapper)](https://cirrus-ci.com/github/hilbix/cirrus/ubuntu-dapper) dapper,
+[![branch ubuntu-hardy status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=ubuntu-hardy)](https://cirrus-ci.com/github/hilbix/cirrus/ubuntu-hardy) hardy,
+[![branch ubuntu-latest status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=ubuntu-latest)](https://cirrus-ci.com/github/hilbix/cirrus/ubuntu-latest) latest,
+[![branch ubuntu-lucid status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=ubuntu-lucid)](https://cirrus-ci.com/github/hilbix/cirrus/ubuntu-lucid) lucid,
+[![branch ubuntu-precise status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=ubuntu-precise)](https://cirrus-ci.com/github/hilbix/cirrus/ubuntu-precise) precise,
+[![branch ubuntu-trusty status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=ubuntu-trusty)](https://cirrus-ci.com/github/hilbix/cirrus/ubuntu-trusty) trusty,
+[![branch ubuntu-xenial status](https://api.cirrus-ci.com/github/hilbix/cirrus.svg?branch=ubuntu-xenial)](https://cirrus-ci.com/github/hilbix/cirrus/ubuntu-xenial) xenial,
 
 # Cirrus CI tests
 
