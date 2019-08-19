@@ -7,19 +7,41 @@ It mostly is to check things with older versions of something.
 
 ## How to use
 
-On GitHub clone https://github.com/hilbix/cirrus
+On GitHub clone: https://github.com/hilbix/cirrus
 
-	git clone https://github.com/GHACCOUNT/cirrus
-	# no .git here, so no https://github.com/GHACCOUNT/cirrus.git
-	cd cirrus
-	git checkout -b NEWBRANCH newbranch
+Then:
+
+	BRANCH=NEWBRANCH
+	GHACCOUNT=YOURGHACCOUNT
+	NAME=cirrus
+
+	git clone "https://github.com/$GHACCOUNT/$NAME.git"
+	cd "$NAME"
+	git checkout -b "$BRANCH" newbranch
 	make
+
 	# edit as you like
 	git add -A
 	git commit
 	git push
 
-Look at Cirrus-CI doing the job of NEWBRANCH
+Now you can look at Cirrus-CI doing the job of `$BRANCH`.
+The `README.md` then already has a proper link.
+
+If you use `git@github.com:$GHACCOUNT/$NAME.git` for cloning,
+then `make` fails with an error when cloing the `master` branch.
+This is because it tries to access `git@github.com:$GHACCOUNT/$NAME.git/`
+which does not work on `ssh` transport, only on the `https://` transport,
+which luckily is used by Cirrus-CI.
+
+Fix this with an entry in your `.gitconfig` file:
+
+	git config --global "url.git@github.com:$GHACCOUNT/$NAME.git.insteadOf" "git@github.com:$GHACCOUNT/$NAME.git/"
+
+Note:
+
+- This url-rewriting on the fly is one of the productivity features built into `git`.
+- I always stick to `https://` for URLs and only rewrite it in `.gitconfig` when I need to push.
 
 
 ## Why CirrusCI?
@@ -160,44 +182,42 @@ Welcome to The Cloud.  Keep their war there, such that we can live long and pros
 This Works is placed under the terms of the Copyright Less License,
 see file COPYRIGHT.CLL.  USE AT OWN RISK, ABSOLUTELY NO WARRANTY.
 
-Read:
+Read: This is free as in free beer, free speech and free baby.
 
-This is free as in free beer, free speech and free baby.
+Read: It's basically Public Domain with some added freedom for the source itself.
 
-Read:
-
-It's basically Public Domain with some added freedom (for the source).
-
-Read:
-
-If you mix this with copyrighted code, just but abstain from covering the CLLed code with any Copyright.
+Read: If you mix this with copyrighted code, just abstain from covering the CLLed code with any Copyright.
 
 Example:
 
 - The CLL is compatible to GNU GPL v3 under Terms 7b:
   - Keep the CLL to explain the legal nature of the CLLed code parts.
   - Explain which is the CLLed part (keep the CLL banner in the file).
-  - Do not even try to add a copyright on the CLLed part.
+  - Do not even try to add a Copyright on the CLLed part.
   - Transfer everything in whole under the GPL.
   - As the GPL applies via Copyright as before, the GPL is not restricted.
   - As the whole can be freely distributed under the terms of the GPL, the GPL is not restricted at all.
-  - As additional benefit, you can take out the CLLed code and separate it from the GPL again.
-    (Note that this is a natural and known process for all dual licensed sources).
+  - As additional benefit, you can take out the CLLed code and distribute/use it separately from the GPL.
+    (Note that this is a natural and known process for all dual licensed sources.)  
+    (Also note that the opposite often is not true.  So redistributing the GPLled part without the CLLed part
+     often violates the GPL, if the GPLled part does not work without the CLLed part anymore.)
 
-- Likewise you can add any other licenses which do not affect the Copyright.
+- Likewise you can add any other licenses to CLLed code, as long as it does not affect the Copyright.
   - Really, any license.  There is no restriction, except the one thing about Copyright.
   - This differs from Public Domain.  You can add your Copyright if you change PD, like by adding a Copyright.
+  - But CLLed code cannot be covered by a Copyright anymore, as this violates the German Urheberrecht.
 
 - Copyright changing licenses are NOT compatible with the CLL.
   - Like Oracle, Microsoft, etc. licenses.
-  - The CLL effectively prohibits adding a Copyright, hence giving it to a 3rd party.
+  - The CLL effectively prohibits adding a Copyright, hence no 3rd party can gain such Copyright.
 
 - CLL allows to mix the code with proprietary/commercial closed source products.
-  - You do not need to give customers additional freedom like being allowed to re-distribute your product.
+  - You do not need to give customers additional freedom, like allowing them to re-distribute the product.
   - You can cover your whole product with any license you like.
-  - But you cannot cover the full product with your Copyright, as it is prohibited for the CLLed code part.
+  - But you cannot cover the full product with your Copyright, as this is prohibited for the CLLed code part.
   - If you fail to state clearly, that parts of the product are CLLed code, all you take are legal risks.
-    Because somebody will spot that you violated the CLL and hence, at court, you will fail to proof your claims!
+    Because somebody will spot that you violated the CLL and hence, at court,
+    you will fail to proof your claims of complete ownership!
 
 - CLL is viral.  It's meant to be a deadly desease for Copyright.  Copyright is slavery!  Abolish all slavery!
 
