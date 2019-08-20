@@ -1,6 +1,3 @@
-container:
-  image: gcc:latest
-
-make_task:
-  make_script: make
+docker_builder:
+  build_script: docker run hello-world
 
